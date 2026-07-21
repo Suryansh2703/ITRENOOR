@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.itr-e-noor.vercel.app/sitemap.xml
+

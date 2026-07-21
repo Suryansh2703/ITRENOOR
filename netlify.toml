@@ -1,0 +1,16 @@
+[[redirects]]
+  from = "https://luxury-attar-perfume-itr-e-noor.netlify.app/*"
+  to = "https://www.itrenoor.app/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://itrenoor.app/*"
+  to = "https://www.itrenoor.app/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
