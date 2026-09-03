@@ -282,7 +282,7 @@ function Footer() {
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl tracking-widest text-gold-400 mb-8 whitespace-nowrap">Quick Links</h2>
             <ul className="space-y-4">
               {[
-                { name: 'Home', path: '/' },
+                { name: 'Home', path: '/home' },
                 { name: 'About Us', path: '/about' },
                 { name: 'Products', path: '/products' },
                 { name: 'Blog', path: '/blog' },
