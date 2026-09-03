@@ -11,27 +11,29 @@ interface SEOProps {
   preloadImage?: string;
 }
 
-export function SEO({ 
-  title, 
-  description, 
-  keywords = 'luxury attar perfumes, best attar brands in india, long lasting attar, arabian oud perfumes', 
-  path = '', 
-  image = '/src/assets/images/logo_optimized_1782312003937.jpg', 
+export function SEO({
+  title,
+  description,
+  keywords = 'luxury attar perfumes, best attar brands in india, long lasting attar, arabian oud perfumes',
+  path = '',
+  image = '/logo-optimized.jpg',
   type = 'website',
   schemaMarkup,
   preloadImage
 }: SEOProps) {
-  
+
   const fullTitle = `${title} | ITR-E-NOOR`;
 
   // Main website domain
-  const CANONICAL_DOMAIN = 'https://itr-e-noor.vercel.app/';
+  const CANONICAL_DOMAIN = 'https://itr-e-noor.vercel.app';
 
   // Make sure the path always starts with /
   const cleanPath =
     path === ''
       ? '/'
-      : (path.startsWith('/') ? path : '/' + path);
+      : path.startsWith('/')
+        ? path
+        : `/${path}`;
 
   // Complete page URL
   const url = `${CANONICAL_DOMAIN}${cleanPath}`;
@@ -39,12 +41,15 @@ export function SEO({
   // Complete image URL
   const imageUrl = image.startsWith('http')
     ? image
-    : `${CANONICAL_DOMAIN}${image.startsWith('/') ? image : '/' + image}`;
+    : `${CANONICAL_DOMAIN}${image.startsWith('/') ? image : `/${image}`}`;
 
   return (
-     <Helmet>
+    <Helmet>
 
-      {/* Basic SEO */}
+      {/* =========================
+          BASIC SEO
+      ========================== */}
+
       <title>{fullTitle}</title>
 
       <meta
@@ -57,7 +62,10 @@ export function SEO({
         content={keywords}
       />
 
-      <meta name="robots" content="index, follow" />
+      <meta
+        name="robots"
+        content="index, follow"
+      />
 
       {/* Canonical URL */}
       <link
@@ -65,7 +73,11 @@ export function SEO({
         href={url}
       />
 
-      {/* Open Graph / Facebook */}
+
+      {/* =========================
+          OPEN GRAPH / FACEBOOK
+      ========================== */}
+
       <meta
         property="og:type"
         content={type}
@@ -92,11 +104,35 @@ export function SEO({
       />
 
       <meta
+        property="og:image:secure_url"
+        content={imageUrl}
+      />
+
+      <meta
+        property="og:image:type"
+        content="image/jpeg"
+      />
+
+      <meta
+        property="og:image:width"
+        content="1200"
+      />
+
+      <meta
+        property="og:image:height"
+        content="630"
+      />
+
+      <meta
         property="og:site_name"
         content="ITR-E-NOOR"
       />
 
-      {/* Twitter / X */}
+
+      {/* =========================
+          TWITTER / X
+      ========================== */}
+
       <meta
         name="twitter:card"
         content="summary_large_image"
@@ -122,7 +158,11 @@ export function SEO({
         content={imageUrl}
       />
 
-      {/* Preload LCP Image */}
+
+      {/* =========================
+          PRELOAD LCP IMAGE
+      ========================== */}
+
       {preloadImage && (
         <link
           rel="preload"
@@ -132,7 +172,11 @@ export function SEO({
         />
       )}
 
-      {/* Schema Markup */}
+
+      {/* =========================
+          SCHEMA MARKUP
+      ========================== */}
+
       {schemaMarkup && (
         <script type="application/ld+json">
           {schemaMarkup}
