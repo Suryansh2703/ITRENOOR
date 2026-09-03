@@ -1,4 +1,3 @@
-```tsx
 import { Helmet } from 'react-helmet-async';
 
 interface SEOProps {
@@ -26,7 +25,7 @@ export function SEO({
   const fullTitle = `${title} | ITR-E-NOOR`;
 
   // Main website domain
-  const CANONICAL_DOMAIN = 'https://www.itrenoor.app';
+  const CANONICAL_DOMAIN = 'https://itr-e-noor.vercel.app/';
 
   // Make sure the path always starts with /
   const cleanPath =
@@ -43,7 +42,7 @@ export function SEO({
     : `${CANONICAL_DOMAIN}${image.startsWith('/') ? image : '/' + image}`;
 
   return (
-    <Helmet>
+     <Helmet>
 
       {/* Basic SEO */}
       <title>{fullTitle}</title>
@@ -141,4 +140,3 @@ export function SEO({
     </Helmet>
   );
 }
-```
