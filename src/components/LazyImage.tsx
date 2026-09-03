@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
 interface LazyImageProps {
   src: string;
   alt: string;
+  title?: string;
   className?: string;
   width?: number | string;
   height?: number | string;
@@ -17,6 +18,7 @@ interface LazyImageProps {
 export default function LazyImage({ 
   src, 
   alt, 
+  title,
   className = '', 
   width, 
   height, 
@@ -50,6 +52,7 @@ export default function LazyImage({
         src={src}
         srcSet={srcSet}
         alt={alt}
+        title={title}
         className={`w-full h-full object-cover ${className}`}
         loading={isLCP ? 'eager' : loading}
         decoding={isLCP ? 'sync' : 'async'}
