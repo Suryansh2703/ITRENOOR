@@ -402,7 +402,7 @@ export default function HomePage() {
       {/* CTA */}
       <section className="py-24 relative overflow-hidden bg-zinc-900">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1629828456645-8120fa2c40c3?auto=format&fit=crop&q=80&w=2000&fm=webp" alt="Luxury attar and arabian oud collection background" loading="lazy" sizes="100vw" className="w-full h-full object-cover opacity-20 filter grayscale blur-sm aspect-video" />
+          <img src="https://images.unsplash.com/photo-1629828456645-8120fa2c40c3?auto=format&fit=crop&q=80&w=2000&fm=webp" alt="Luxury attar and arabian oud collection background" title="Luxury Attar and Arabian Oud Collection" loading="lazy" sizes="100vw" className="w-full h-full object-cover opacity-20 filter grayscale blur-sm aspect-video" />
           <div className="absolute inset-0 bg-zinc-900/80"></div>
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
