@@ -116,6 +116,7 @@ export default function BestSellersPage() {
                         <LazyImage
                           src={product.image}
                           alt={`${product.name} - Best Selling Perfume and Natural Attar in India`}
+                          title={`${product.name} - Best Selling Perfume and Natural Attar in India`}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100"
                           loading={catIndex === 0 && i < 2 ? "eager" : "lazy"}
                           isLCP={catIndex === 0 && i < 2}
