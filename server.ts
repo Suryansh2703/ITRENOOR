@@ -13,7 +13,7 @@ async function startServer() {
   // Canonical URL redirect
   app.use((req, res, next) => {
     const host = req.get('host');
-    const CANONICAL_HOST = 'www.itrenoor.app';
+    const CANONICAL_HOST = 'https://itr-e-noor.vercel.app/';
     
     // Skip local dev
     if (!host || host === 'localhost:3000') {

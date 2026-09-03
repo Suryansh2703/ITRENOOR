@@ -32,7 +32,7 @@ export default function BlogPostPage() {
           "@context": "https://schema.org",
           "@type": "BlogPosting",
           "headline": "${article.title}",
-          "image": "https://www.itrenoor.app${article.image}",
+          "image": "https://itr-e-noor.vercel.app${article.image}",
           "datePublished": "${article.date}",
           "author": {
             "@type": "Organization",
@@ -43,13 +43,13 @@ export default function BlogPostPage() {
             "name": "ITR-E-NOOR",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://www.itrenoor.app/src/assets/images/logo_optimized_1782312003937.jpg"
+              "url": "https://itr-e-noor.vercel.app/src/assets/images/logo_optimized_1782312003937.jpg"
             }
           },
           "description": "${article.excerpt}",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://www.itrenoor.app/blog/${article.id}"
+            "@id": "https://itr-e-noor.vercel.app/blog/${article.id}"
           }
         }`}
       />

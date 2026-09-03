@@ -10,13 +10,13 @@ export default function BlogPage() {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "ITR-E-NOOR Fragrance Journal",
-    "url": "https://www.itrenoor.app/blog",
+    "url": "https://itr-e-noor.vercel.app/blog",
     "description": "Read our fragrance journal for the latest tips, guides, and insights onto the best authentic arabian oud perfumes, long lasting attar, and more at ITR-E-NOOR.",
     "blogPost": articles.map(article => ({
       "@type": "BlogPosting",
       "headline": article.title,
-      "url": `https://www.itrenoor.app/blog/${article.id}`,
-      "image": `https://www.itrenoor.app${article.image}`,
+      "url": `https://itr-e-noor.vercel.app/blog/${article.id}`,
+      "image": `https://itr-e-noor.vercel.app${article.image}`,
       "datePublished": "2024-01-01", 
       "author": {
         "@type": "Organization",
