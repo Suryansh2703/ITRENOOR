@@ -289,8 +289,7 @@ function Footer() {
                 { name: 'Products', path: '/products' },
                 { name: 'Blog', path: '/blog' },
                 { name: 'Contact', path: '/contact' },
-                {name: 'Wishlist', path: '/wishlist' },
-                {name: 'Cart', path: '/cart' }
+                
               ].map((link) => (
                 <li key={link.name}>
                   <Link to={link.path} className="text-zinc-300 hover:text-gold-400 transition-colors text-lg sm:text-xl md:text-2xl">
