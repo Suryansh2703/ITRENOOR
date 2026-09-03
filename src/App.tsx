@@ -301,10 +301,8 @@ function Footer() {
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl tracking-widest text-gold-400 mb-8 whitespace-nowrap">Follow Us</h2>
             <ul className="space-y-4">
               {[
-                { name: 'Instagram', url: 'https://instagram.com' },
-                { name: 'Facebook', url: 'https://facebook.com' },
-                { name: 'YouTube', url: 'https://youtube.com' },
-                { name: 'X (Twitter)', url: 'https://twitter.com' }
+                { name: 'Instagram', url: 'https://www.instagram.com/itr.e.noor12/' },
+                { name: 'Facebook', url: 'https://www.facebook.com/itrenoor/' },
               ].map((social) => (
                 <li key={social.name}>
                   <a href={social.url} target="_blank" rel="noopener noreferrer" className="text-zinc-300 hover:text-gold-400 transition-colors text-lg sm:text-xl md:text-2xl">
