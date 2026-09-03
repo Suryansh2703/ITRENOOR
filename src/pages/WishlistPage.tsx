@@ -97,7 +97,8 @@ export default function WishlistPage() {
                 <div className="relative overflow-hidden aspect-square">
                   <LazyImage 
                     src={product.image} 
-                    alt={`${product.name} - Saved Luxury Attar`} 
+                    alt={`${product.name} - Saved Luxury Attar`}
+                    title={`${product.name} - Saved Luxury Attar`} 
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 aspect-square"

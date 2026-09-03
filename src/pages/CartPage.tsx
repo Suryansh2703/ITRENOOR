@@ -87,7 +87,8 @@ export default function CartPage() {
                   >
                     <LazyImage 
                       src={item.product.image} 
-                      alt={`${item.product.name} - Luxury Fragrance Product`} 
+                      alt={`${item.product.name} - Luxury Fragrance Product`}
+                      title={`${item.product.name} - Luxury Fragrance Product`} 
                       loading="lazy"
                       sizes="128px"
                       className="w-24 h-24 sm:w-32 sm:h-32 object-cover border border-zinc-800 aspect-square"

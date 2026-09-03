@@ -146,6 +146,7 @@ export default function ProductsPage() {
                         <LazyImage 
                           src={product.image} 
                           alt={`${product.name} - Exquisite Perfume and Long Lasting Attar Collection`}
+                          title={`${product.name} - Exquisite Perfume and Long Lasting Attar Collection`}
                           className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 aspect-[4/5]"
                           loading={idx === 0 ? "eager" : "lazy"}
                           isLCP={idx === 0}

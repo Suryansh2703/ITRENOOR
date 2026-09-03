@@ -96,6 +96,7 @@ export default function ProductDetailPage() {
             <LazyImage 
               src={product.image} 
               alt={`${product.name} - Buy Premium Luxury Attar Perfume and Arabian Oud Online`}
+              title={`${product.name} - Buy Premium Luxury Attar Perfume and Arabian Oud Online`}
               fetchPriority="high"
               loading="eager"
               isLCP={true}

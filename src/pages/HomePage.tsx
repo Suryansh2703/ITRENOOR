@@ -201,6 +201,7 @@ export default function HomePage() {
                   <LazyImage 
                     src={product.image} 
                     alt={`${product.name} - Luxury Attar Perfumes & Arabian Oud`}
+                    title={`${product.name} - Luxury Attar Perfumes & Arabian Oud`}
                     className="w-full h-full object-cover object-center group-hover/image:scale-105 transition-transform duration-700 opacity-80 group-hover/image:opacity-100 aspect-[4/5]"
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -268,6 +269,7 @@ export default function HomePage() {
                   <LazyImage 
                     src={product.image} 
                     alt={`${product.name} - Premium Attar for Men & Women`}
+                    title={`${product.name} - Premium Attar for Men & Women`}
                     className="w-full h-full object-cover object-center group-hover/image:scale-105 transition-transform duration-700 opacity-80 group-hover/image:opacity-100 aspect-[4/5]"
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -332,6 +334,7 @@ export default function HomePage() {
                   <LazyImage 
                     src={product.image} 
                     alt={`${product.name} - Long Lasting Attar Fragrance`}
+                    title={`${product.name} - Long Lasting Attar Fragrance`}
                     className="w-full h-full object-cover object-center group-hover/image:scale-105 transition-transform duration-700 opacity-80 group-hover/image:opacity-100 aspect-[4/5]"
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
