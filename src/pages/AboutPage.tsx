@@ -7,17 +7,31 @@ const founderImage = '/founder.jpg';
 
 export default function AboutPage() {
   const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "ITR-E-NOOR",
-    "url": "https://www.itrenoor.app",
-    "logo": "https://www.itrenoor.app/src/assets/images/logo_optimized_1782312003937.jpg",
-    "description": "The best perfume store in India offering authentic arabian oud perfumes, long lasting luxury attar, and exquisite non-alcoholic fragrances.",
-    "founder": {
-      "@type": "Person",
-      "name": "Suryansh Anand"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.itrenoor.app/#organization",
+      "name": "ITR-E-NOOR",
+      "url": "https://www.itrenoor.app/",
+      "description": "Premium luxury attar perfumes and Arabian oud store in India.",
+      "founder": {
+        "@type": "Person",
+        "name": "Suryansh Anand"
+      }
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://www.itrenoor.app/about/#webpage",
+      "url": "https://www.itrenoor.app/about/",
+      "name": "About Us | ITR-E-NOOR",
+      "description": "Learn about ITR-E-NOOR, a premium fragrance brand offering luxury attar perfumes, Arabian oud, and non-alcoholic fragrances.",
+      "mainEntity": {
+        "@id": "https://www.itrenoor.app/#organization"
+      }
     }
-  };
+  ]
+};
 
   return (
     <div className="w-full bg-zinc-950">

@@ -56,32 +56,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:type" content="website" />
     <script type="application/ld+json">
       {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "#organization",
-            "name": "ITR-E-NOOR",
-            "url": "/",
-            "logo": "/logo-optimized.jpg",
-            "description": "Premium luxury attar perfumes and arabian oud store in India.",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "contactType": "customer support"
-            }
-          },
-          {
-            "@type": "WebSite",
-            "@id": "#website",
-            "url": "/",
-            "name": "ITR-E-NOOR",
-            "description": "Experience ITR-E-NOOR, one of the best attar brands in India. Discover long-lasting luxury attar perfumes, premium arabian oud, and premium non-alcoholic fragrances.",
-            "publisher": {
-              "@id": "#organization"
-            }
-          }
-        ]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://itr-e-noor.vercel.app/#organization",
+      "name": "ITR-E-NOOR",
+      "url": "https://itr-e-noor.vercel.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://itr-e-noor.vercel.app/#logo",
+        "url": "https://itr-e-noor.vercel.app/logo-optimized.jpg"
+      },
+      "description": "Premium luxury attar perfumes and Arabian oud store in India.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support"
       }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://itr-e-noor.vercel.app/#website",
+      "url": "https://itr-e-noor.vercel.app/",
+      "name": "ITR-E-NOOR",
+      "description": "Discover luxury attar perfumes, Arabian oud, and non-alcoholic fragrances from ITR-E-NOOR.",
+      "publisher": {
+        "@id": "https://itr-e-noor.vercel.app/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://itr-e-noor.vercel.app/#webpage",
+      "url": "https://itr-e-noor.vercel.app/",
+      "name": "Luxury Attar Perfumes & Arabian Oud | ITR-E-NOOR",
+      "description": "Shop luxury attar perfumes and Arabian oud fragrances from ITR-E-NOOR.",
+      "isPartOf": {
+        "@id": "https://itr-e-noor.vercel.app/#website"
+      },
+      "about": {
+        "@id": "https://itr-e-noor.vercel.app/#organization"
+      },
+      "publisher": {
+        "@id": "https://itr-e-noor.vercel.app/#organization"
+      }
+    }
+  ]
+}
     </script>
   </head>
   <body>
