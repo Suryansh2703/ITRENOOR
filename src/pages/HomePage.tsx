@@ -80,6 +80,7 @@ export default function HomePage() {
               key={currentImageIndex}
               src={heroImages[currentImageIndex]}
               alt="Luxury Perfumes Background" 
+              title="Luxury Perfumes Background"
               fetchPriority={currentImageIndex === 0 ? "high" : "auto"}
               loading={currentImageIndex === 0 ? "eager" : "lazy"}
               decoding={currentImageIndex === 0 ? "sync" : "async"}

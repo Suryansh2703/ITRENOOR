@@ -114,7 +114,7 @@ function Navigation() {
               transition={{ type: "spring", damping: 20, stiffness: 100 }}
               className="w-64 h-64 md:w-96 md:h-96 rounded-full bg-zinc-900 border-4 border-gold-500 shadow-[0_0_50px_rgba(212,175,55,0.3)] flex flex-col items-center justify-center overflow-hidden"
             >
-              <img src={logoOptimized} alt="ITR-E-NOOR Logo Expanded" fetchPriority="high" loading="eager" width={400} height={400} sizes="400px" className="w-full h-full object-cover rounded-full" />
+              <img src={logoOptimized} alt="ITR-E-NOOR Logo Expanded" title="ITR-E-NOOR Logo" fetchPriority="high" loading="eager" width={400} height={400} sizes="400px" className="w-full h-full object-cover rounded-full" />
             </motion.div>
           </motion.div>
         )}
@@ -131,7 +131,7 @@ function Navigation() {
               }}
               className="flex items-center space-x-3 cursor-pointer"
             >
-              <img src={logoOptimized} alt="ITR-E-NOOR Logo" fetchPriority="high" loading="eager" width={48} height={48} sizes="48px" className="w-10 h-10 md:w-12 md:h-12 object-cover rounded-full" />
+              <img src={logoOptimized} alt="ITR-E-NOOR Logo" title="ITR-E-NOOR Logo" fetchPriority="high" loading="eager" width={48} height={48} sizes="48px" className="w-10 h-10 md:w-12 md:h-12 object-cover rounded-full" />
               <span className="font-display text-xl sm:text-2xl md:text-3xl tracking-widest text-gold-400">ITR-E-NOOR</span>
             </div>
 
@@ -281,7 +281,7 @@ function Footer() {
           <div className="flex flex-col items-center md:items-start">
             <span className="font-display text-2xl sm:text-4xl md:text-5xl tracking-widest text-gold-400 mb-4 whitespace-nowrap">ITR-E-NOOR</span>
             <p className="text-zinc-300 italic font-serif mb-4 text-lg sm:text-xl md:text-2xl whitespace-nowrap text-center md:text-left">A Fragrance That Becomes A Memory</p>
-            <img src={logoOptimized} alt="ITR-E-NOOR Logo" loading="lazy" decoding="async" width={256} height={256} sizes="256px" className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 object-cover rounded-full mt-4" />
+            <img src={logoOptimized} alt="ITR-E-NOOR Logo" title="ITR-E-NOOR Logo" loading="lazy" decoding="async" width={256} height={256} sizes="256px" className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 object-cover rounded-full mt-4" />
           </div>
           
           <div className="flex flex-col items-center md:items-start">
