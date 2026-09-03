@@ -289,6 +289,8 @@ function Footer() {
                 { name: 'Products', path: '/products' },
                 { name: 'Blog', path: '/blog' },
                 { name: 'Contact', path: '/contact' },
+                {name: 'Wishlist', path: '/wishlist' },
+                {name: 'Cart', path: '/cart' }
                 
               ].map((link) => (
                 <li key={link.name}>
