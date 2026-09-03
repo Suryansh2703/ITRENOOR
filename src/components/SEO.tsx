@@ -57,6 +57,8 @@ export function SEO({
         content={keywords}
       />
 
+      <meta name="robots" content="index, follow" />
+
       {/* Canonical URL */}
       <link
         rel="canonical"

@@ -1,38 +1,26 @@
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://www.itr-e-noor.vercel.app/</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://itr-e-noor.vercel.app/</loc>
   </url>
+
   <url>
-    <loc>https://www.itr-e-noor.vercel.app/products</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://itr-e-noor.vercel.app/about</loc>
   </url>
+
   <url>
-    <loc>https://www.itr-e-noor.vercel.app/best-sellers</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://itr-e-noor.vercel.app/products</loc>
   </url>
+
   <url>
-    <loc>https://www.itr-e-noor.vercel.app/about</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://itr-e-noor.vercel.app/blog</loc>
   </url>
+
   <url>
-    <loc>https://www.itr-e-noor.vercel.app/blog</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://itr-e-noor.vercel.app/contact</loc>
   </url>
-  <url>
-    <loc>https://www.itr-e-noor.vercel.app/contact</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
+
 </urlset>
+```
